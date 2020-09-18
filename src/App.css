@@ -56,3 +56,17 @@
 .space{
   margin: 0 5px;
 }
+
+.background{
+  background-image: url("./img/remodeling-banner2.jpg");
+  background-position: center;
+  padding: 150px auto;
+  /*opacity: 0.6;*/
+}
+
+.opacity1{
+  opacity: 1.0;
+}
+.opacity5{
+  opacity: 0.5;
+}

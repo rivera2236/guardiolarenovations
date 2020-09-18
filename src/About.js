@@ -84,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
 
 const cards = [1, 2, 3, 4];
 
-export default function Album() {
+export default function About() {
   const classes = useStyles();
 
   return (
@@ -97,7 +97,7 @@ export default function Album() {
           <Container maxWidth="sm" style={{padding: "0"}}>
           <Card  style={{background: "rgba(211,211,211, 0.7)"}} elevation={0} square>  
             <Typography component="h1" variant="h2" align="center" color="textPrimary" style={{paddingTop: "100px"}} gutterBottom>
-              Renovations & Remodeling
+              About
             </Typography>
             <Typography variant="h5" align="center" color="textPrimary" paragraph>
               Something short and leading about the collection below—its contents, the creator, etc.
