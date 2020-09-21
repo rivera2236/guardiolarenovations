@@ -18,20 +18,23 @@ import {
 import Album from './Album'
 import About from './About'
 import Users from './Users'
+import MobileMenu from './Menu'
+import Navigation from './Navigation'
+import Navigation2 from './Navigation2'
 
 function App() {
   return (
       <div>
-        <Header />
-
 		<Router>
-	      <div>
-	        <Switch>
-              <Route path="/" component={Album} exact/>
-              <Route path="/about" component={About}/>
-              <Route path="/users"> <Users /> </Route>
-            </Switch>
-          </div>
+	    	<Header />
+		      
+		    <div>
+		        <Switch>
+	              <Route path="/" component={Album} exact/>
+	              <Route path="/about" component={About}/>
+	              <Route path="/users"> <Users /> </Route>
+	            </Switch>
+	        </div>
         </Router>
       </div>
   );

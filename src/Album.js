@@ -82,7 +82,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [1, 2, 3, 4];
+const cards = [1, 2, 3, 4, 5, 6];
+const cards2 = [1, 2, 3];
 
 export default function Album() {
   const classes = useStyles();
@@ -108,7 +109,7 @@ export default function Album() {
               <Grid container spacing={2} justify="center" style={{paddingBottom: "75px"}}>
                 <Grid item>
                   <Button variant="contained" color="primary">
-                    Main call to action
+                    Primary action
                   </Button>
                 </Grid>
                 <Grid item>
@@ -121,11 +122,102 @@ export default function Album() {
           </Card>  
           </Container>
         </div>
+{/* First section start her  */}
+        <Hidden smDown>
         <Container className={classes.cardGrid} maxWidth="lg">
-          {/* End hero unit */}
+          <Grid container>
+              <Grid item xs={12} sm={6}>
+                <Card className={classes.card} square disableElevation>
+                  <CardMedia className={classes.cardMedia} image="https://source.unsplash.com/random" title="Image title" />
+                </Card>
+              </Grid>
+
+              <Grid container square xs={12} sm={6} justify="center" alignItems="center">
+                  <Grid item style={{padding: "15px"}}>
+                  <Typography variant="h5" align="center" color="textPrimary" gutterBottom>
+                    Remodeling
+                  </Typography>
+                  <Typography align="center" color="textPrimary" paragraph>
+                    Something short and leading about the collection below—its contents, the creator, etc.
+                    Make it short and sweet, but not too short so folks don&apos;t simply skip over it
+                    entirely.
+                  </Typography>
+                  <div className={classes.heroButtons}>
+                    <Grid container spacing={2} justify="center">
+                      <Grid item>
+                        <Button variant="outlined" color="primary">
+                          View More
+                        </Button>
+                      </Grid>
+                    </Grid>
+                  </div>
+                  </Grid>
+              </Grid>
+
+              <Grid container square xs={12} sm={6} justify="center" alignItems="center">
+                  <Grid item style={{padding: "15px"}}>
+                  <Typography variant="h5" align="center" color="textPrimary" gutterBottom>
+                    General Construction
+                  </Typography>
+                  <Typography align="center" color="textPrimary" paragraph>
+                    Something short and leading about the collection below—its contents, the creator, etc.
+                    Make it short and sweet, but not too short so folks don&apos;t simply skip over it
+                    entirely.
+                  </Typography>
+                  <div className={classes.heroButtons}>
+                    <Grid container spacing={2} justify="center">
+                      <Grid item>
+                        <Button variant="outlined" color="primary">
+                          View More
+                        </Button>
+                      </Grid>
+                    </Grid>
+                  </div>
+                  </Grid>
+              </Grid>
+
+              <Grid item xs={12} sm={6}>
+                <Card className={classes.card} square>
+                  <CardMedia className={classes.cardMedia} image="https://source.unsplash.com/random" title="Image title" />
+                </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={6}>
+                <Card className={classes.card} square>
+                  <CardMedia className={classes.cardMedia} image="https://source.unsplash.com/random" title="Image title" />
+                </Card>
+              </Grid>
+
+              <Grid container square xs={12} sm={6} justify="center" alignItems="center">
+                  <Grid item style={{padding: "15px"}}>
+                  <Typography variant="h5" align="center" color="textPrimary" gutterBottom>
+                    Renovations
+                  </Typography>
+                  <Typography align="center" color="textPrimary" paragraph>
+                    Something short and leading about the collection below—its contents, the creator, etc.
+                    Make it short and sweet, but not too short so folks don&apos;t simply skip over it
+                    entirely.
+                  </Typography>
+                  <div className={classes.heroButtons}>
+                    <Grid container spacing={2} justify="center">
+                      <Grid item>
+                        <Button variant="outlined" color="primary">
+                          View More
+                        </Button>
+                      </Grid>
+                    </Grid>
+                  </div>
+                  </Grid>
+              </Grid>
+          </Grid>
+        </Container>
+        </Hidden>
+{/* Second section start her  */}
+        <Hidden mdUp>
+        <Container className={classes.cardGrid} maxWidth="lg">
           <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6}>
+            {cards2.map((card) => (
+              <Grid item key={card} xs={12} sm={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -134,7 +226,7 @@ export default function Album() {
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      General Construction
                     </Typography>
                     <Typography>
                       This is a media card. You can use this section to describe the content.
@@ -142,10 +234,7 @@ export default function Album() {
                   </CardContent>
                   <CardActions>
                     <Button size="small" color="primary">
-                      View
-                    </Button>
-                    <Button size="small" color="primary">
-                      Edit
+                      View More
                     </Button>
                   </CardActions>
                 </Card>
@@ -153,6 +242,7 @@ export default function Album() {
             ))}
           </Grid>
         </Container>
+        </Hidden>
       </main>
       {/* Footer */}
       <footer className={classes.footer}>

@@ -5,6 +5,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import {
   BrowserRouter as Router,
+  NavLink,
   Switch,
   Route,
   Link
@@ -13,19 +14,14 @@ import Album from './Album'
 import About from './About'
 import Users from './Users'
 
-import { NavLink } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
 
-
-
-const options = [
-  'Home',
-  'Gallery',
-  'Contact'
-];
+import './App.css'
 
 const ITEM_HEIGHT = 48;
 
-const LongMenu = () => {
+
+const SimpleMenu = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
 
@@ -44,6 +40,7 @@ const LongMenu = () => {
         aria-controls="long-menu"
         aria-haspopup="true"
         onClick={handleClick}
+        style={{color: "white"}}
       >
         <MoreVertIcon />
       </IconButton>
@@ -60,21 +57,21 @@ const LongMenu = () => {
           },
         }}
       >
-        <Router>
-          <div>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="./about">About</NavLink>
-            <NavLink to="./users">Users</NavLink>
+	      <NavLink to="/" style={{textdecoration: "none"}}>
+		      <MenuItem onClick={handleClose} style={{textdecoration: "none"}}>Home</MenuItem>
+          </NavLink>
 
-            
-          </div>
-        </Router>
+          <NavLink to="/about">
+		      <MenuItem onClick={handleClose}>About</MenuItem>
+          </NavLink>
+
+          <NavLink to="/users">
+		      <MenuItem onClick={handleClose}>Users</MenuItem>
+          </NavLink>
 
       </Menu>
     </div>
   );
 }
 
-
-
-export default LongMenu; 
+export default SimpleMenu;
