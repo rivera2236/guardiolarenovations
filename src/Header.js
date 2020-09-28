@@ -39,6 +39,8 @@ import About from './About';
 
 import Navigation2 from './Navigation2';
 
+import Img3 from './img/purpleapple.png';
+
 
 export default function Header() {
 	return(

@@ -1,41 +1,21 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
-import CameraIcon from '@material-ui/icons/PhotoCamera';
-
-import Icon from '@material-ui/core/Icon';
-
+import { makeStyles } from '@material-ui/core/styles';
+import GridList from '@material-ui/core/GridList';
+import Grid from '@material-ui/core/Grid';
+import GridListTile from '@material-ui/core/GridListTile';
+import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
+import StarBorderIcon from '@material-ui/icons/StarBorder';
+import Typography from '@material-ui/core/Typography';
+import OutlinedInput from '@material-ui/core/OutlinedInput';
+import Card from '@material-ui/core/Card';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
-
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Grid from '@material-ui/core/Grid';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 
-import './App.css';
-
-import SvgIcon from '@material-ui/core/SvgIcon'
-import HomeIcon from '@material-ui/icons/Home';
-import HomeWorkIcon from '@material-ui/icons/HomeWork';
-
-import Hidden from '@material-ui/core/Hidden';
-
-import { MemoryRouter as Router } from 'react-router';
-import { BrowserRouter, Route, Link as RouterLink  } from "react-router-dom";
-
-import Menu from './Menu';
-
-
+import image from './img/remodeling-banner.jpg';
+import image2 from './img/remodeling-banner2.jpg';
 
 function Copyright() {
   return (
@@ -80,82 +60,161 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
+    backgroundColor: theme.palette.background.paper,
+  },
+  gridList: {
+    flexWrap: 'nowrap',
+    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
+    transform: 'translateZ(0)',
+  },
+  title: {
+    color: "white",
+  },
+  titleBar: {
+    background:
+      'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
+  },
 }));
 
-const cards = [1, 2, 3, 4];
 
-export default function About() {
+
+const tileData = [
+  {
+    img: image,
+    title: 'Before',
+    author: 'author',
+  },
+  {
+    img: image2,
+    title: 'After',
+    author: 'author',
+  },
+  {
+    img: image,
+    title: 'Image',
+    author: 'author',
+  },
+  {
+    img: image2,
+    title: 'Image',
+    author: 'author',
+  },
+  {
+    img: image,
+    title: 'Image',
+    author: 'author',
+  },
+  {
+    img: image2,
+    title: 'Image',
+    author: 'author',
+  },
+];
+ 
+function SingleLineGridList() {
   const classes = useStyles();
 
   return (
-    <React.Fragment>
-      <CssBaseline />
-      
-      <main>
-        {/* Hero unit */}
-        <div className={classes.heroContent} class="background">
-          <Container maxWidth="sm" style={{padding: "0"}}>
-          <Card  style={{background: "rgba(211,211,211, 0.7)"}} elevation={0} square>  
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" style={{paddingTop: "100px"}} gutterBottom>
-              About
-            </Typography>
-            <Typography variant="h5" align="center" color="textPrimary" paragraph>
-              Something short and leading about the collection below—its contents, the creator, etc.
-              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-              entirely.
-            </Typography>
-            <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center" style={{paddingBottom: "75px"}}>
-                <Grid item>
-                  <Button variant="contained" color="primary">
-                    Main call to action
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Secondary action
-                  </Button>
-                </Grid>
-              </Grid>
-            </div>
-          </Card>  
-          </Container>
-        </div>
-        <Container className={classes.cardGrid} maxWidth="lg">
-          {/* End hero unit */}
-          <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6}>
-                <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
-                    title="Image title"
+    <div>
+    <main style={{padding: "50px"}}>
+    <Grid container justify="center" alignItems="center">
+      <Grid item xs={10}>
+        <center>
+        <Typography>
+          <h2>KITCHENS</h2> 
+        </Typography>
+          <p>Something here to give the this section a purpose or description of an image!</p>
+          </center>
+      </Grid>
+      <Grid item xs={10}>
+        <div style={{border: '1px solid lightGray', padding: "15px"}}>
+          <div className={classes.root}>
+            <GridList className={classes.gridList} cols={2.5}>
+              {tileData.map((tile) => (
+                <GridListTile key={tile.img}>
+                  <img src={tile.img} alt={tile.title} />
+                  <GridListTileBar
+                    title={tile.title}
+                    classes={{
+                      root: classes.titleBar,
+                      title: classes.title,
+                    }}
                   />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      View
-                    </Button>
-                    <Button size="small" color="primary">
-                      Edit
-                    </Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </main>
-      {/* Footer */}
-      <footer className={classes.footer}>
+                </GridListTile>
+              ))}
+            </GridList>
+          </div>
+        </div>
+      </Grid>
+    </Grid>
+
+    <Grid container justify="center" alignItems="center">
+      <Grid item xs={10}>
+        <center>
+        <Typography>
+          <h2>BATHROOMS</h2> 
+          <p>Something here to give the this section a purpose or description of an image!</p>
+        </Typography>
+        </center>
+      </Grid>
+      <Grid item xs={10}>
+        <div style={{border: '1px solid lightGray', padding: "15px"}}>
+          <div className={classes.root}>
+            <GridList className={classes.gridList} cols={2.5}>
+              {tileData.map((tile) => (
+                <GridListTile key={tile.img}>
+                  <img src={tile.img} alt={tile.title} />
+                  <GridListTileBar
+                    title={tile.title}
+                    classes={{
+                      root: classes.titleBar,
+                      title: classes.title,
+                    }}
+                  />
+                </GridListTile>
+              ))}
+            </GridList>
+          </div>
+        </div>
+      </Grid>
+    </Grid>
+
+    <Grid container justify="center" alignItems="center">
+      <Grid item xs={10}>
+        <Typography>
+          <h2>GENERAL RENOVATIONS</h2> 
+          <p>Something here to give the this section a purpose or description of an image!</p>
+        </Typography>
+      </Grid>
+      <Grid item xs={10}>
+        <div style={{border: '1px solid lightGray', padding: "15px"}}>
+          <div className={classes.root}>
+            <GridList className={classes.gridList} cols={2.5}>
+              {tileData.map((tile) => (
+                <GridListTile key={tile.img}>
+                  <img src={tile.img} alt={tile.title} />
+                  <GridListTileBar
+                    title={tile.title}
+                    classes={{
+                      root: classes.titleBar,
+                      title: classes.title,
+                    }}
+                  />
+                </GridListTile>
+              ))}
+            </GridList>
+          </div>
+        </div>
+      </Grid>
+    </Grid>
+    </main>
+
+    <footer className={classes.footer} style={{padding: "48px"}}>
         <Typography variant="h6" align="center" gutterBottom>
           Footer
         </Typography>
@@ -185,7 +244,8 @@ export default function About() {
         </Typography>
         <Copyright />
       </footer>
-      {/* End footer */}
-    </React.Fragment>
+    </div>
   );
 }
+
+export default SingleLineGridList;
