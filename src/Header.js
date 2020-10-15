@@ -39,8 +39,6 @@ import About from './About';
 
 import Navigation2 from './Navigation2';
 
-import Img3 from './img/purpleapple.png';
-
 
 export default function Header() {
 	return(
@@ -49,8 +47,8 @@ export default function Header() {
 			<Toolbar>
 			  
 			  <Grid container alignItems="flex-end" spacing="1">
-			      <Grid item><HomeWorkIcon /></Grid>
-			      <Grid item><Typography variant="h6" color="inherit" noWrap>Guardiola Renovations</Typography></Grid>
+				  
+			      <Grid item><Typography variant="h6" color="inherit" noWrap>717-891-0588</Typography></Grid>
 			  </Grid>
 
 			  <Hidden mdUp><Navigation2 /></Hidden>

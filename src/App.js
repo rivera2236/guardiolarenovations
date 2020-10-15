@@ -18,9 +18,6 @@ import {
 import Album from './Album'
 import About from './About'
 import Users from './Users'
-import MobileMenu from './Menu'
-import Navigation from './Navigation'
-import Navigation2 from './Navigation2'
 
 function App() {
   return (

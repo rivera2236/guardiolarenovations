@@ -80,6 +80,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
+  low: {
+    textTransform: 'lowercase'
+  },
+  cap: {
+    textTransform: 'capitalize'
+  }
 }));
 
 const cards = [1, 2, 3, 4];
@@ -95,64 +101,50 @@ export default function About() {
         {/* Hero unit */}
         <div className={classes.heroContent} class="background">
           <Container maxWidth="sm" style={{padding: "0"}}>
-          <Card  style={{background: "rgba(211,211,211, 0.7)"}} elevation={0} square>  
+          <Card  style={{background: "rgba(211,211,211, 0.7)", paddingBottom: "45px"}} elevation={0} square>  
             <Typography component="h1" variant="h2" align="center" color="textPrimary" style={{paddingTop: "100px"}} gutterBottom>
               Contact
             </Typography>
-            <Typography variant="h5" align="center" color="textPrimary" paragraph>
-              Something short and leading about the collection below—its contents, the creator, etc.
-              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-              entirely.
+            <Typography variant="h5" align="center" color="textPrimary" style={{padding: "0 15px"}} paragraph>
+              Please feel free to contact us if you need a quote or have any questions. You can also check us out on social media.
             </Typography>
-            <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center" style={{paddingBottom: "75px"}}>
-                <Grid item>
-                  <Button variant="contained" color="primary">
-                    Main call to action
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Secondary action
-                  </Button>
-                </Grid>
+            
+            <Hidden xsDown>
+            <Grid container direction="row" justify="center" alignItems="center">
+              <Grid item xs={10}>
+                <h2>Phone:<Link href="tel:7178557907"> 123-456-7890</Link></h2>
+                <h2>Email:<Link href="mailto:rivera2236@gmail.com?subject=Need information or quote!"> guardiolarenovations19@gmail.com</Link></h2>
+                <h2>Facebook:<Link target="_blank" href="https://www.facebook.com/pages/category/Kitchen---Bath-Contractor/Guardiola-Renovations-108219213937689/"> Guardiola Renovations</Link></h2>
               </Grid>
-            </div>
+            </Grid>
+            </Hidden>
+            
+            <Hidden smUp>
+            <center>
+              <Button href="tel:7178557907" variant="contained" color="primary" size="large">
+                Phone: 123-456-7890
+              </Button>
+            </center>
+            <br/>
+            <center>
+              <Button className={classes.low} href="mailto:rivera2236@gmail.com?subject=Need information or quote!" variant="contained" color="primary" size="large">
+                guardiolarenovations@gmail.com
+              </Button>
+            </center>
+            <br/>
+            <center>
+              <Button className={classes.cap} target="_blank" href="https://www.facebook.com/pages/category/Kitchen---Bath-Contractor/Guardiola-Renovations-108219213937689/" variant="contained" color="primary" size="large">
+                Facebook
+              </Button>
+            </center>
+            </Hidden>
+
+            
           </Card>  
           </Container>
         </div>
-        <Container className={classes.cardGrid} maxWidth="lg">
           {/* End hero unit */}
-          <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6}>
-                <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
-                    title="Image title"
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      View
-                    </Button>
-                    <Button size="small" color="primary">
-                      Edit
-                    </Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
+          
       </main>
       {/* Footer */}
       <footer className={classes.footer}>

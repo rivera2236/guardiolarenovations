@@ -34,6 +34,7 @@ import { MemoryRouter as Router } from 'react-router';
 import { BrowserRouter, Route, Link as RouterLink  } from "react-router-dom";
 
 import Menu from './Menu';
+import logo from './img/logo.png';
 
 
 
@@ -80,6 +81,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
+  paddingTopBottom: {
+    padding: "15px 0"
+  },
 }));
 
 const cards = [1, 2, 3, 4, 5, 6];
@@ -96,29 +100,22 @@ export default function Album() {
         {/* Hero unit */}
         <div className={classes.heroContent} class="background">
           <Container maxWidth="sm" style={{padding: "0"}}>
-          <Card  style={{background: "rgba(211,211,211, 0.7)"}} elevation={0} square>  
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" style={{paddingTop: "100px"}} gutterBottom>
-              Renovations & Remodeling
-            </Typography>
+          <Card  style={{background: "rgba(211,211,211, 0.7)", padding: "0 15px"}} elevation={0} square>  
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+            >
+              <Grid item className={classes.paddingTopBottom}>
+                <img src={logo} alt="Logo"  width="100%"/>
+              </Grid>
+            </Grid>
             <Typography variant="h5" align="center" color="textPrimary" paragraph>
               Something short and leading about the collection below—its contents, the creator, etc.
               Make it short and sweet, but not too short so folks don&apos;t simply skip over it
               entirely.
             </Typography>
-            <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center" style={{paddingBottom: "75px"}}>
-                <Grid item>
-                  <Button variant="contained" color="primary">
-                    Primary action
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Secondary action
-                  </Button>
-                </Grid>
-              </Grid>
-            </div>
           </Card>  
           </Container>
         </div>

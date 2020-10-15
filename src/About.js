@@ -17,6 +17,9 @@ import Link from '@material-ui/core/Link';
 import image from './img/remodeling-banner.jpg';
 import image2 from './img/remodeling-banner2.jpg';
 
+import Tab from './Tab';
+import Tab2 from './Tab2';
+
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -124,93 +127,16 @@ function SingleLineGridList() {
     <main style={{padding: "50px"}}>
     <Grid container justify="center" alignItems="center">
       <Grid item xs={10}>
-        <center>
-        <Typography>
-          <h2>KITCHENS</h2> 
-        </Typography>
-          <p>Something here to give the this section a purpose or description of an image!</p>
-          </center>
-      </Grid>
-      <Grid item xs={10}>
-        <div style={{border: '1px solid lightGray', padding: "15px"}}>
-          <div className={classes.root}>
-            <GridList className={classes.gridList} cols={2.5}>
-              {tileData.map((tile) => (
-                <GridListTile key={tile.img}>
-                  <img src={tile.img} alt={tile.title} />
-                  <GridListTileBar
-                    title={tile.title}
-                    classes={{
-                      root: classes.titleBar,
-                      title: classes.title,
-                    }}
-                  />
-                </GridListTile>
-              ))}
-            </GridList>
-          </div>
-        </div>
-      </Grid>
-    </Grid>
-
-    <Grid container justify="center" alignItems="center">
-      <Grid item xs={10}>
-        <center>
-        <Typography>
-          <h2>BATHROOMS</h2> 
-          <p>Something here to give the this section a purpose or description of an image!</p>
-        </Typography>
-        </center>
-      </Grid>
-      <Grid item xs={10}>
-        <div style={{border: '1px solid lightGray', padding: "15px"}}>
-          <div className={classes.root}>
-            <GridList className={classes.gridList} cols={2.5}>
-              {tileData.map((tile) => (
-                <GridListTile key={tile.img}>
-                  <img src={tile.img} alt={tile.title} />
-                  <GridListTileBar
-                    title={tile.title}
-                    classes={{
-                      root: classes.titleBar,
-                      title: classes.title,
-                    }}
-                  />
-                </GridListTile>
-              ))}
-            </GridList>
-          </div>
-        </div>
-      </Grid>
-    </Grid>
-
-    <Grid container justify="center" alignItems="center">
-      <Grid item xs={10}>
         <Typography>
           <h2>GENERAL RENOVATIONS</h2> 
           <p>Something here to give the this section a purpose or description of an image!</p>
         </Typography>
       </Grid>
-      <Grid item xs={10}>
-        <div style={{border: '1px solid lightGray', padding: "15px"}}>
-          <div className={classes.root}>
-            <GridList className={classes.gridList} cols={2.5}>
-              {tileData.map((tile) => (
-                <GridListTile key={tile.img}>
-                  <img src={tile.img} alt={tile.title} />
-                  <GridListTileBar
-                    title={tile.title}
-                    classes={{
-                      root: classes.titleBar,
-                      title: classes.title,
-                    }}
-                  />
-                </GridListTile>
-              ))}
-            </GridList>
-          </div>
-        </div>
+
+      <Grid>
+        <Tab />
       </Grid>
+
     </Grid>
     </main>
 
