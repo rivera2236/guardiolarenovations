@@ -59,42 +59,42 @@ BeforeAndAfterGallery.defaultProps = {
             orientation: true,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "8H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: image2,
             thumbnail: image2,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: image3,
             thumbnail: image3,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "315H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: image4,
             thumbnail: image4,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "201H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: image5,
             thumbnail: image5,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "Big Ben (Tom Eversley - isorepublic.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: image6,
             thumbnail: image6,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "Red Zone - Paris (Tom Eversley - isorepublic.com)"
+            caption: "Guardiola Renovations"
         }
     ])
 };

@@ -68,42 +68,42 @@ KitchensAndDoors.defaultProps = {
             thumbnail: kitchen1,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: kitchen2,
             thumbnail: kitchen2,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: kitchen3,
             thumbnail: kitchen3,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: kitchen4,
             thumbnail: kitchen4,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: kitchen5,
             thumbnail: kitchen5,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: kitchen6,
             thumbnail: kitchen6,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: door1,
@@ -111,63 +111,63 @@ KitchensAndDoors.defaultProps = {
             orientation: true,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "8H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: door2,
             thumbnail: door2,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: door3,
             thumbnail: door3,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "315H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: door4,
             thumbnail: door4,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "201H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: door6,
             thumbnail: door6,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "Big Ben (Tom Eversley - isorepublic.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: door5,
             thumbnail: door5,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "Red Zone - Paris (Tom Eversley - isorepublic.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: door7,
             thumbnail: door7,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "Red Zone - Paris (Tom Eversley - isorepublic.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: door8,
             thumbnail: door8,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "Red Zone - Paris (Tom Eversley - isorepublic.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: door9,
             thumbnail: door9,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "Red Zone - Paris (Tom Eversley - isorepublic.com)"
+            caption: "Guardiola Renovations"
         }
     ])
 };

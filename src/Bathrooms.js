@@ -81,70 +81,70 @@ Bathrooms.defaultProps = {
             thumbnail: bathroom1,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom2,
             thumbnail: bathroom2,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom3,
             thumbnail: bathroom3,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom4,
             thumbnail: bathroom4,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom5,
             thumbnail: bathroom5,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom6,
             thumbnail: bathroom6,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom7,
             thumbnail: bathroom7,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom8,
             thumbnail: bathroom8,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom9,
             thumbnail: bathroom9,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom10,
             thumbnail: bathroom10,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom11,
@@ -152,63 +152,63 @@ Bathrooms.defaultProps = {
             orientation: true,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "8H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom12,
             thumbnail: bathroom12,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom13,
             thumbnail: bathroom13,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "315H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom14,
             thumbnail: bathroom14,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "201H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom15,
             thumbnail: bathroom15,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "Red Zone - Paris (Tom Eversley - isorepublic.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom16,
             thumbnail: bathroom16,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "Big Ben (Tom Eversley - isorepublic.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom17,
             thumbnail: bathroom17,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "Red Zone - Paris (Tom Eversley - isorepublic.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom18,
             thumbnail: bathroom18,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "Red Zone - Paris (Tom Eversley - isorepublic.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom19,
             thumbnail: bathroom19,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "Red Zone - Paris (Tom Eversley - isorepublic.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom20,
@@ -216,7 +216,7 @@ Bathrooms.defaultProps = {
             orientation: true,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "8H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom21,
@@ -224,63 +224,63 @@ Bathrooms.defaultProps = {
             orientation: true,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "8H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom22,
             thumbnail: bathroom22,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "286H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom23,
             thumbnail: bathroom23,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "315H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom24,
             thumbnail: bathroom24,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "201H (gratisography.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom25,
             thumbnail: bathroom25,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "Red Zone - Paris (Tom Eversley - isorepublic.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom26,
             thumbnail: bathroom26,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "Big Ben (Tom Eversley - isorepublic.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom27,
             thumbnail: bathroom27,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "Red Zone - Paris (Tom Eversley - isorepublic.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom28,
             thumbnail: bathroom28,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "Red Zone - Paris (Tom Eversley - isorepublic.com)"
+            caption: "Guardiola Renovations"
         },
         {
             src: bathroom29,
             thumbnail: bathroom29,
             thumbnailWidth: 300,
             thumbnailHeight: 300,
-            caption: "Red Zone - Paris (Tom Eversley - isorepublic.com)"
+            caption: "Guardiola Renovations"
         }
     ])
 };

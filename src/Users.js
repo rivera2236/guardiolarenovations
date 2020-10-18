@@ -36,20 +36,6 @@ import { BrowserRouter, Route, Link as RouterLink  } from "react-router-dom";
 import Menu from './Menu';
 
 
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Guardiola Renovations, LLC.
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
-
 const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: theme.spacing(2),
@@ -88,8 +74,6 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const cards = [1, 2, 3, 4];
-
 export default function About() {
   const classes = useStyles();
 
@@ -101,9 +85,9 @@ export default function About() {
         {/* Hero unit */}
         <div className={classes.heroContent} class="background">
           <Container maxWidth="sm" style={{padding: "0"}}>
-          <Card  style={{background: "rgba(211,211,211, 0.7)", paddingBottom: "45px"}} elevation={0} square>  
+          <Card style={{background: "rgba(211,211,211, 0.7)", paddingBottom: "45px"}} elevation={0} square>  
             <Typography component="h1" variant="h2" align="center" color="textPrimary" style={{paddingTop: "100px"}} gutterBottom>
-              Contact
+              Contact Us!
             </Typography>
             <Typography variant="h5" align="center" color="textPrimary" style={{padding: "0 15px"}} paragraph>
               Please feel free to contact us if you need a quote or have any questions. You can also check us out on social media.
@@ -112,9 +96,10 @@ export default function About() {
             <Hidden xsDown>
             <Grid container direction="row" justify="center" alignItems="center">
               <Grid item xs={10}>
-                <h2>Phone:<Link href="tel:7178557907"> 123-456-7890</Link></h2>
-                <h2>Email:<Link href="mailto:rivera2236@gmail.com?subject=Need information or quote!"> guardiolarenovations19@gmail.com</Link></h2>
+                <h2>Phone:<Link href="tel:7178910588"> (717) 891-0588</Link></h2>
+                <h2>Email:<Link href="mailto:guardiolarenovations19@gmail.com?subject=Need information or quote!"> guardiolarenovations19@gmail.com</Link></h2>
                 <h2>Facebook:<Link target="_blank" href="https://www.facebook.com/pages/category/Kitchen---Bath-Contractor/Guardiola-Renovations-108219213937689/"> Guardiola Renovations</Link></h2>
+                <h2>Instagram:<Link target="_blank" href="https://www.instagram.com/guardiolarenovations/?hl=en"> @guardiolarenovations</Link></h2>
               </Grid>
             </Grid>
             </Hidden>
@@ -137,47 +122,19 @@ export default function About() {
                 Facebook
               </Button>
             </center>
+            <br/>
+            <center>
+              <Button className={classes.cap} target="_blank" href="https://www.instagram.com/guardiolarenovations/?hl=en" variant="contained" color="primary" size="large">
+                Instagram
+              </Button>
+            </center>
             </Hidden>
 
             
           </Card>  
           </Container>
         </div>
-          {/* End hero unit */}
-          
       </main>
-      {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-
-                      <Grid container direction="row" justify="center" alignItems="center" spacing={1}>
-                        <div className={classes.root}>
-                          <IconButton aria-label="facebook">
-                            <FacebookIcon />
-                          </IconButton>
-                        </div>
-
-                        <div className={classes.root}>
-                          <IconButton aria-label="twitter">
-                            <TwitterIcon />
-                          </IconButton>
-                        </div>
-
-                        <div className={classes.root}>
-                          <IconButton aria-label="instgram">
-                            <InstagramIcon />
-                          </IconButton>
-                        </div>
-                      </Grid>
-
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
-        </Typography>
-        <Copyright />
-      </footer>
-      {/* End footer */}
     </React.Fragment>
   );
 }

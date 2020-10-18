@@ -36,7 +36,11 @@ import { BrowserRouter, Route, Link as RouterLink  } from "react-router-dom";
 import Menu from './Menu';
 import logo from './img/logo.png';
 
+import bathroom1 from './img/bathroom1.jpg';
+import kitchen1 from './img/kitchen1.jpg';
+import image1 from './img/bfStairs.jpg';
 
+import Footer from './Footer'
 
 function Copyright() {
   return (
@@ -86,16 +90,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [1, 2, 3, 4, 5, 6];
-const cards2 = [1, 2, 3];
-
 export default function Album() {
   const classes = useStyles();
 
   return (
     <React.Fragment>
       <CssBaseline />
-      
       <main>
         {/* Hero unit */}
         <div className={classes.heroContent} class="background">
@@ -112,9 +112,7 @@ export default function Album() {
               </Grid>
             </Grid>
             <Typography variant="h5" align="center" color="textPrimary" paragraph>
-              Something short and leading about the collection below—its contents, the creator, etc.
-              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-              entirely.
+              Some home renovation and remodeling companies focus on a single room. Some only do bathrooms, while others only do kitchens. At Corbett Design Build, we do it all, from bedrooms to bathrooms, basements to attics. Our professional home renovation contractors and home design experts help you plan ahead to create the home of your dreams.
             </Typography>
           </Card>  
           </Container>
@@ -125,24 +123,22 @@ export default function Album() {
           <Grid container>
               <Grid item xs={12} sm={6}>
                 <Card className={classes.card} square disableElevation>
-                  <CardMedia className={classes.cardMedia} image="https://source.unsplash.com/random" title="Image title" />
+                <CardMedia className={classes.cardMedia} image={bathroom1}/>
                 </Card>
               </Grid>
 
               <Grid container square xs={12} sm={6} justify="center" alignItems="center">
                   <Grid item style={{padding: "15px"}}>
                   <Typography variant="h5" align="center" color="textPrimary" gutterBottom>
-                    Remodeling
+                    Bathrooms
                   </Typography>
                   <Typography align="center" color="textPrimary" paragraph>
-                    Something short and leading about the collection below—its contents, the creator, etc.
-                    Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-                    entirely.
+                    We help you pick the perfect fixtures, lighting, and materials to turn your most frequently used rooms into an oasis. Our comprehensive contractor services install everything—even the plumbing and wiring.
                   </Typography>
                   <div className={classes.heroButtons}>
                     <Grid container spacing={2} justify="center">
                       <Grid item>
-                        <Button variant="outlined" color="primary">
+                        <Button href="./gallery" variant="outlined" color="primary">
                           View More
                         </Button>
                       </Grid>
@@ -154,17 +150,15 @@ export default function Album() {
               <Grid container square xs={12} sm={6} justify="center" alignItems="center">
                   <Grid item style={{padding: "15px"}}>
                   <Typography variant="h5" align="center" color="textPrimary" gutterBottom>
-                    General Construction
+                    Kitchens & Doors
                   </Typography>
                   <Typography align="center" color="textPrimary" paragraph>
-                    Something short and leading about the collection below—its contents, the creator, etc.
-                    Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-                    entirely.
+                    We can turn the centerpiece of your home into a masterpiece for your family. We install everything from floors to ceilings, including cabinets, fixtures, countertops, appliances, windows, doors, and everything in between.
                   </Typography>
                   <div className={classes.heroButtons}>
                     <Grid container spacing={2} justify="center">
                       <Grid item>
-                        <Button variant="outlined" color="primary">
+                        <Button href="./gallery" variant="outlined" color="primary">
                           View More
                         </Button>
                       </Grid>
@@ -175,20 +169,20 @@ export default function Album() {
 
               <Grid item xs={12} sm={6}>
                 <Card className={classes.card} square>
-                  <CardMedia className={classes.cardMedia} image="https://source.unsplash.com/random" title="Image title" />
+                  <CardMedia className={classes.cardMedia} image={kitchen1} title="Image title" />
                 </Card>
               </Grid>
 
               <Grid item xs={12} sm={6}>
                 <Card className={classes.card} square>
-                  <CardMedia className={classes.cardMedia} image="https://source.unsplash.com/random" title="Image title" />
+                  <CardMedia className={classes.cardMedia} image={image1} title="Image title" />
                 </Card>
               </Grid>
 
               <Grid container square xs={12} sm={6} justify="center" alignItems="center">
                   <Grid item style={{padding: "15px"}}>
                   <Typography variant="h5" align="center" color="textPrimary" gutterBottom>
-                    Renovations
+                    Before & After
                   </Typography>
                   <Typography align="center" color="textPrimary" paragraph>
                     Something short and leading about the collection below—its contents, the creator, etc.
@@ -198,7 +192,7 @@ export default function Album() {
                   <div className={classes.heroButtons}>
                     <Grid container spacing={2} justify="center">
                       <Grid item>
-                        <Button variant="outlined" color="primary">
+                        <Button href="./gallery" variant="outlined" color="primary">
                           View More
                         </Button>
                       </Grid>
@@ -209,70 +203,86 @@ export default function Album() {
           </Grid>
         </Container>
         </Hidden>
-{/* Second section start her  */}
+{/* Second section start here  */}
         <Hidden mdUp>
         <Container className={classes.cardGrid} maxWidth="lg">
           <Grid container spacing={4}>
-            {cards2.map((card) => (
-              <Grid item key={card} xs={12} sm={4}>
+{/* MOBIEL CARD 1 */}            
+              <Grid item xs={12} sm={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
+                    image={bathroom1}
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      General Construction
+                      Bathrooms
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      We help you pick the perfect fixtures, lighting, and materials to turn your most frequently used rooms into an oasis. Our comprehensive contractor services install everything—even the plumbing and wiring.
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary">
+                    <Button href="./gallery" size="small" color="primary">
                       View More
                     </Button>
                   </CardActions>
                 </Card>
               </Grid>
-            ))}
+            
+{/* MOBIEL CARD 2 */}            
+              <Grid item xs={12} sm={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={kitchen1}
+                    title="Image title"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Kitchens & Doors
+                    </Typography>
+                    <Typography>
+                      We can turn the centerpiece of your home into a masterpiece for your family. We install everything from floors to ceilings, including cabinets, fixtures, countertops, appliances, windows, doors, and everything in between.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button href="./gallery" size="small" color="primary">
+                      View More
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            
+{/* MOBIEL CARD 3 */}            
+              <Grid item xs={12} sm={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={image1}
+                    title="Image title"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Before & After
+                    </Typography>
+                    <Typography>
+                      ...This is a media card. You can use this section to describe the content.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button  href="./gallery" size="small" color="primary">
+                      View More
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            
           </Grid>
         </Container>
         </Hidden>
       </main>
-      {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-
-                      <Grid container direction="row" justify="center" alignItems="center" spacing={1}>
-                        <div className={classes.root}>
-                          <IconButton aria-label="facebook">
-                            <FacebookIcon />
-                          </IconButton>
-                        </div>
-
-                        <div className={classes.root}>
-                          <IconButton aria-label="twitter">
-                            <TwitterIcon />
-                          </IconButton>
-                        </div>
-
-                        <div className={classes.root}>
-                          <IconButton aria-label="instgram">
-                            <InstagramIcon />
-                          </IconButton>
-                        </div>
-                      </Grid>
-
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
-        </Typography>
-        <Copyright />
-      </footer>
-      {/* End footer */}
     </React.Fragment>
   );
 }

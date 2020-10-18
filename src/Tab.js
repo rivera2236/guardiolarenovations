@@ -83,8 +83,8 @@ export default function NavTabs() {
           onChange={handleChange}
           aria-label="nav tabs example"
           indicatorColor="primary"
-	      textColor="primary"
-	      centered
+  	      textColor="primary"
+  	      centered
         >
           <LinkTab label="Bathrooms" href="/drafts" {...a11yProps(0)} />
           <LinkTab label="Kitchen & Doors" href="/spam" {...a11yProps(1)} />

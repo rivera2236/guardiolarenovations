@@ -61,12 +61,12 @@ const SimpleMenu = () => {
 		      <MenuItem onClick={handleClose} style={{textdecoration: "none"}}>Home</MenuItem>
           </NavLink>
 
-          <NavLink to="/about">
-		      <MenuItem onClick={handleClose}>About</MenuItem>
+          <NavLink to="/gallery">
+		      <MenuItem onClick={handleClose}>Gallery</MenuItem>
           </NavLink>
 
-          <NavLink to="/users">
-		      <MenuItem onClick={handleClose}>Users</MenuItem>
+          <NavLink to="/contact">
+		      <MenuItem onClick={handleClose}>Contact</MenuItem>
           </NavLink>
 
       </Menu>

@@ -18,20 +18,6 @@ import image from './img/remodeling-banner.jpg';
 import image2 from './img/remodeling-banner2.jpg';
 
 import Tab from './Tab';
-import Tab2 from './Tab2';
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Guardiola Renovations, LLC.
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -139,37 +125,6 @@ function SingleLineGridList() {
 
     </Grid>
     </main>
-
-    <footer className={classes.footer} style={{padding: "48px"}}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-
-                      <Grid container direction="row" justify="center" alignItems="center" spacing={1}>
-                        <div className={classes.root}>
-                          <IconButton aria-label="facebook">
-                            <FacebookIcon />
-                          </IconButton>
-                        </div>
-
-                        <div className={classes.root}>
-                          <IconButton aria-label="twitter">
-                            <TwitterIcon />
-                          </IconButton>
-                        </div>
-
-                        <div className={classes.root}>
-                          <IconButton aria-label="instgram">
-                            <InstagramIcon />
-                          </IconButton>
-                        </div>
-                      </Grid>
-
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
-        </Typography>
-        <Copyright />
-      </footer>
     </div>
   );
 }

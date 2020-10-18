@@ -1,14 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import Header from './Header.js';
-
-import 'fontsource-roboto';
-import Typography from '@material-ui/core/Typography';
-
-import IconButton from '@material-ui/core/IconButton';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
+import Footer from './Footer.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -28,10 +20,12 @@ function App() {
 		    <div>
 		        <Switch>
 	              <Route path="/" component={Album} exact/>
-	              <Route path="/about" component={About}/>
-	              <Route path="/users"> <Users /> </Route>
+	              <Route path="/gallery" component={About}/>
+	              <Route path="/contact"> <Users /> </Route>
 	            </Switch>
 	        </div>
+
+	        <Footer />
         </Router>
       </div>
   );

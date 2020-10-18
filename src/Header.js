@@ -47,7 +47,6 @@ export default function Header() {
 			<Toolbar>
 			  
 			  <Grid container alignItems="flex-end" spacing="1">
-				  
 			      <Grid item><Typography variant="h6" color="inherit" noWrap>717-891-0588</Typography></Grid>
 			  </Grid>
 
@@ -61,13 +60,13 @@ export default function Header() {
 					  </Button>
 			      </NavLink></Grid>
 
-			      <Grid item><NavLink to="./about">
+			      <Grid item><NavLink to="./gallery">
 					  <Button variant="contained" color="primary"  startIcon={<Icon>build</Icon>} disableElevation>
 					  Gallery
 					  </Button>
 			      </NavLink></Grid>
 
-			      <Grid item><NavLink to="./users">
+			      <Grid item><NavLink to="./contact">
 					  <Button variant="contained" color="primary"  startIcon={<Icon>phone</Icon>} disableElevation>
 					  Contact
 					  </Button>
