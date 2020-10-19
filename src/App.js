@@ -19,7 +19,7 @@ function App() {
 		      
 		    <div>
 		        <Switch>
-	              <Route path="/" component={Album} exact/>
+	              <Route path="/guardiolarenovations/" component={Album} exact/>
 	              <Route path="/gallery" component={About}/>
 	              <Route path="/contact"> <Users /> </Route>
 	            </Switch>
