@@ -54,7 +54,7 @@ export default function Header() {
 
 			  <Hidden smDown>
 			  <Grid container justify="flex-end" direction="row" spacing={1} mdUp>
-			      <Grid item><NavLink to="/">
+			      <Grid item><NavLink to="/guardiolarenovations/">
 					  <Button variant="contained" color="primary"  startIcon={<Icon>home</Icon>} disableElevation>
 					  Home
 					  </Button>
