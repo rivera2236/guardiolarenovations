@@ -112,7 +112,7 @@ export default function Album() {
               </Grid>
             </Grid>
             <Typography variant="h5" align="center" color="textPrimary" paragraph>
-              Some home renovation and remodeling companies focus on a single room. Some only do bathrooms, while others only do kitchens. At Corbett Design Build, we do it all, from bedrooms to bathrooms, basements to attics. Our professional home renovation contractors and home design experts help you plan ahead to create the home of your dreams.
+              Some home renovation and remodeling companies focus on a single room. Some only do bathrooms, while others only do kitchens. At Corbett Design Build, we do it all, from bedrooms to bathrooms, basements to attics. We are here for all your renovation and remodeling needs.
             </Typography>
           </Card>  
           </Container>
