@@ -118,7 +118,7 @@ export default function Album() {
           </Card>  
           </Container>
         </div>
-{/* First section start her  */}
+{/* First section start here  */}
         <Hidden smDown>
         <Container className={classes.cardGrid} maxWidth="lg">
           <Grid container>
@@ -161,8 +161,8 @@ export default function Album() {
                   <div className={classes.heroButtons}>
                     <Grid container spacing={2} justify="center">
                       <Grid item>
-                        <NavLink to="/guardiolarenovations/gallery">
-                          <Button variant="outlined" color="secondary">
+                        <NavLink to="./gallery">
+                          <Button variant="outlined" color="primary">
                             View More
                           </Button>
                         </NavLink>
@@ -197,9 +197,11 @@ export default function Album() {
                   <div className={classes.heroButtons}>
                     <Grid container spacing={2} justify="center">
                       <Grid item>
-                        <Button href="/gallery" variant="outlined" color="secondary">
-                          View More
-                        </Button>
+                        <NavLink to="./gallery">
+                          <Button variant="outlined" color="primary">
+                            View More
+                          </Button>
+                        </NavLink>
                       </Grid>
                     </Grid>
                   </div>
