@@ -231,9 +231,11 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button href="/guardiolarenovations/gallery" size="small" color="primary">
-                      View More
-                    </Button>
+                    <NavLink to="./gallery">
+                      <Button size="small" color="primary">
+                        View More
+                      </Button>
+                    </NavLink>
                   </CardActions>
                 </Card>
               </Grid>
@@ -255,9 +257,11 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button href="/guardiolarenovations/gallery" size="small" color="primary">
-                      View More
-                    </Button>
+                    <NavLink to="./gallery">
+                      <Button size="small" color="primary">
+                        View More
+                      </Button>
+                    </NavLink>
                   </CardActions>
                 </Card>
               </Grid>
@@ -279,9 +283,11 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button  href="/guardiolarenovations/gallery" size="small" color="primary">
-                      View More
-                    </Button>
+                    <NavLink to="./gallery">
+                      <Button size="small" color="primary">
+                        View More
+                      </Button>
+                    </NavLink>
                   </CardActions>
                 </Card>
               </Grid>
