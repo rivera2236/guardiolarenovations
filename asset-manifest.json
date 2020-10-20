@@ -5,13 +5,13 @@
     "main.js.map": "/guardiolarenovations/static/js/main.9a33fa3a.chunk.js.map",
     "runtime-main.js": "/guardiolarenovations/static/js/runtime-main.c24529f3.js",
     "runtime-main.js.map": "/guardiolarenovations/static/js/runtime-main.c24529f3.js.map",
-    "static/js/2.93d449b5.chunk.js": "/guardiolarenovations/static/js/2.93d449b5.chunk.js",
-    "static/js/2.93d449b5.chunk.js.map": "/guardiolarenovations/static/js/2.93d449b5.chunk.js.map",
+    "static/js/2.6931e62c.chunk.js": "/guardiolarenovations/static/js/2.6931e62c.chunk.js",
+    "static/js/2.6931e62c.chunk.js.map": "/guardiolarenovations/static/js/2.6931e62c.chunk.js.map",
     "index.html": "/guardiolarenovations/index.html",
-    "precache-manifest.10074b799521a0ef00ec920827b51044.js": "/guardiolarenovations/precache-manifest.10074b799521a0ef00ec920827b51044.js",
+    "precache-manifest.2586224c79a80493e3db785de8090c77.js": "/guardiolarenovations/precache-manifest.2586224c79a80493e3db785de8090c77.js",
     "service-worker.js": "/guardiolarenovations/service-worker.js",
     "static/css/main.43673ee3.chunk.css.map": "/guardiolarenovations/static/css/main.43673ee3.chunk.css.map",
-    "static/js/2.93d449b5.chunk.js.LICENSE.txt": "/guardiolarenovations/static/js/2.93d449b5.chunk.js.LICENSE.txt",
+    "static/js/2.6931e62c.chunk.js.LICENSE.txt": "/guardiolarenovations/static/js/2.6931e62c.chunk.js.LICENSE.txt",
     "static/media/bathroom1.jpg": "/guardiolarenovations/static/media/bathroom1.752c1dbe.jpg",
     "static/media/bathroom10.jpg": "/guardiolarenovations/static/media/bathroom10.12cc1f98.jpg",
     "static/media/bathroom11.jpg": "/guardiolarenovations/static/media/bathroom11.9cc70e4b.jpg",
@@ -68,7 +68,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c24529f3.js",
-    "static/js/2.93d449b5.chunk.js",
+    "static/js/2.6931e62c.chunk.js",
     "static/css/main.43673ee3.chunk.css",
     "static/js/main.9a33fa3a.chunk.js"
   ]
