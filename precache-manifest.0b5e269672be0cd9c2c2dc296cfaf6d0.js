@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c6c74ca019943baf3ee853d921890c69",
+    "revision": "5e216066846695385aac653ff7bf5059",
     "url": "/guardiolarenovations/index.html"
   },
   {
-    "revision": "7ca7f7d8adbaa1d0d0ce",
+    "revision": "58cc84934f0ff179a345",
     "url": "/guardiolarenovations/static/css/main.43673ee3.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/guardiolarenovations/static/js/2.8b2e60db.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7ca7f7d8adbaa1d0d0ce",
-    "url": "/guardiolarenovations/static/js/main.6c61ce7b.chunk.js"
+    "revision": "58cc84934f0ff179a345",
+    "url": "/guardiolarenovations/static/js/main.64b02b24.chunk.js"
   },
   {
     "revision": "f13a14566347a2f8e9e6",
