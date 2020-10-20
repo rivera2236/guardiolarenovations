@@ -20,8 +20,8 @@ function App() {
 		    <div>
 		        <Switch>
 	              <Route path="/guardiolarenovations/" component={Album} exact/>
-	              <Route path="/gallery" component={About}/>
-	              <Route path="/contact"> <Users /> </Route>
+	              <Route path="/guardiolarenovations/gallery" component={About}/>
+	              <Route path="/guardiolarenovations/contact"> <Users /> </Route>
 	            </Switch>
 	        </div>
 

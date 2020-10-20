@@ -40,6 +40,7 @@ import bathroom1 from './img/bathroom1.jpg';
 import kitchen1 from './img/kitchen1.jpg';
 import image1 from './img/bfStairs.jpg';
 
+import Header from './Header.js';
 import Footer from './Footer'
 
 function Copyright() {
@@ -138,7 +139,7 @@ export default function Album() {
                   <div className={classes.heroButtons}>
                     <Grid container spacing={2} justify="center">
                       <Grid item>
-                        <Button href="./gallery" variant="outlined" color="primary">
+                        <Button href="./gallery" variant="outlined" color="secondary">
                           View More
                         </Button>
                       </Grid>
@@ -158,7 +159,7 @@ export default function Album() {
                   <div className={classes.heroButtons}>
                     <Grid container spacing={2} justify="center">
                       <Grid item>
-                        <Button href="./gallery" variant="outlined" color="primary">
+                        <Button href="/guardiolarenovations/gallery" variant="outlined" color="primary">
                           View More
                         </Button>
                       </Grid>
@@ -192,7 +193,7 @@ export default function Album() {
                   <div className={classes.heroButtons}>
                     <Grid container spacing={2} justify="center">
                       <Grid item>
-                        <Button href="./gallery" variant="outlined" color="primary">
+                        <Button href="/gallery" variant="outlined" color="primary">
                           View More
                         </Button>
                       </Grid>
@@ -224,7 +225,7 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button href="./gallery" size="small" color="primary">
+                    <Button href="/guardiolarenovations/gallery" size="small" color="primary">
                       View More
                     </Button>
                   </CardActions>
@@ -248,7 +249,7 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button href="./gallery" size="small" color="primary">
+                    <Button href="/guardiolarenovations/gallery" size="small" color="primary">
                       View More
                     </Button>
                   </CardActions>
@@ -272,7 +273,7 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button  href="./gallery" size="small" color="primary">
+                    <Button  href="/guardiolarenovations/gallery" size="small" color="primary">
                       View More
                     </Button>
                   </CardActions>
