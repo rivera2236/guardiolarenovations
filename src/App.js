@@ -22,7 +22,6 @@ function App() {
 	              <Route path="/guardiolarenovations/" component={Album} exact/>
 	              <Route path="/guardiolarenovations/gallery" component={About}/>
 	              <Route path="/guardiolarenovations/contact"> <Users /> </Route>
-			      <Album />
 	            </Switch>
 	        </div>
 

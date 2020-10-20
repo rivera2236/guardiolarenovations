@@ -31,7 +31,7 @@ import HomeWorkIcon from '@material-ui/icons/HomeWork';
 import Hidden from '@material-ui/core/Hidden';
 
 import { MemoryRouter as Router } from 'react-router';
-import { BrowserRouter, Route, Link as RouterLink  } from "react-router-dom";
+import { BrowserRouter, NavLink, Switch, Route, Link as RouterLink  } from "react-router-dom";
 
 import Menu from './Menu';
 import logo from './img/logo.png';
@@ -139,9 +139,11 @@ export default function Album() {
                   <div className={classes.heroButtons}>
                     <Grid container spacing={2} justify="center">
                       <Grid item>
-                        <Button href="./gallery" variant="outlined" color="secondary">
-                          View More
-                        </Button>
+                        <NavLink to="./gallery">
+                          <Button variant="outlined" color="primary">
+                            View More
+                          </Button>
+                        </NavLink>
                       </Grid>
                     </Grid>
                   </div>
@@ -159,9 +161,11 @@ export default function Album() {
                   <div className={classes.heroButtons}>
                     <Grid container spacing={2} justify="center">
                       <Grid item>
-                        <Button href="/guardiolarenovations/gallery" variant="outlined" color="primary">
-                          View More
-                        </Button>
+                        <NavLink to="/guardiolarenovations/gallery">
+                          <Button variant="outlined" color="secondary">
+                            View More
+                          </Button>
+                        </NavLink>
                       </Grid>
                     </Grid>
                   </div>
@@ -193,7 +197,7 @@ export default function Album() {
                   <div className={classes.heroButtons}>
                     <Grid container spacing={2} justify="center">
                       <Grid item>
-                        <Button href="/gallery" variant="outlined" color="primary">
+                        <Button href="/gallery" variant="outlined" color="secondary">
                           View More
                         </Button>
                       </Grid>
