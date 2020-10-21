@@ -19,7 +19,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.4"
   },
-  "homepage": "https://rivera2236.github.io/guardiolarenovations/",
+  "homepage": "https://guardiolarenovations.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
