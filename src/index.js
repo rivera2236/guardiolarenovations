@@ -12,10 +12,11 @@ import {
 } from "react-router-dom";
 import Album from './Album'
 import About from './About'
+import Test from './Test'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Test />
   </React.StrictMode>,
   document.getElementById('root')
 );
