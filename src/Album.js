@@ -139,7 +139,7 @@ export default function Album() {
                   <div className={classes.heroButtons}>
                     <Grid container spacing={2} justify="center">
                       <Grid item>
-                        <NavLink to="./gallery">
+                        <NavLink to="/gallery">
                           <Button variant="outlined" color="primary">
                             View More
                           </Button>
@@ -161,7 +161,7 @@ export default function Album() {
                   <div className={classes.heroButtons}>
                     <Grid container spacing={2} justify="center">
                       <Grid item>
-                        <NavLink to="./gallery">
+                        <NavLink to="/gallery">
                           <Button variant="outlined" color="primary">
                             View More
                           </Button>
@@ -197,7 +197,7 @@ export default function Album() {
                   <div className={classes.heroButtons}>
                     <Grid container spacing={2} justify="center">
                       <Grid item>
-                        <NavLink to="./gallery">
+                        <NavLink to="/gallery">
                           <Button variant="outlined" color="primary">
                             View More
                           </Button>
@@ -231,7 +231,7 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <NavLink to="./gallery">
+                    <NavLink to="/gallery">
                       <Button size="small" color="primary">
                         View More
                       </Button>
@@ -257,7 +257,7 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <NavLink to="./gallery">
+                    <NavLink to="/gallery">
                       <Button size="small" color="primary">
                         View More
                       </Button>
@@ -283,7 +283,7 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <NavLink to="./gallery">
+                    <NavLink to="/gallery">
                       <Button size="small" color="primary">
                         View More
                       </Button>

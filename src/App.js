@@ -19,9 +19,9 @@ function App() {
 		      
 		    <div>
 		        <Switch>
-	              <Route path="/guardiolarenovations/" component={Album} exact/>
-	              <Route path="/guardiolarenovations/gallery" component={About}/>
-	              <Route path="/guardiolarenovations/contact"> <Users /> </Route>
+	              <Route path="/" component={Album} exact/>
+	              <Route path="/gallery" component={About}/>
+	              <Route path="/contact"> <Users /> </Route>
 	            </Switch>
 	        </div>
 

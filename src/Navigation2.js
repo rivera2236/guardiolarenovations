@@ -57,15 +57,15 @@ const SimpleMenu = () => {
           },
         }}
       >
-	      <NavLink to="/guardiolarenovations/" style={{textdecoration: "none"}}>
+	      <NavLink to="/" style={{textdecoration: "none"}}>
 		      <MenuItem onClick={handleClose} style={{textdecoration: "none"}}>Home</MenuItem>
           </NavLink>
 
-          <NavLink to="./gallery">
+          <NavLink to="/gallery">
 		      <MenuItem onClick={handleClose}>Gallery</MenuItem>
           </NavLink>
 
-          <NavLink to="./contact">
+          <NavLink to="/contact">
 		      <MenuItem onClick={handleClose}>Contact</MenuItem>
           </NavLink>
 
