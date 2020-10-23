@@ -106,13 +106,13 @@ export default function About() {
             
             <Hidden smUp>
             <center>
-              <Button href="tel:7178557907" variant="contained" color="primary" size="large">
+              <Button href="tel:7178910588" variant="contained" color="primary" size="large">
                 Phone: 123-456-7890
               </Button>
             </center>
             <br/>
             <center>
-              <Button className={classes.low} href="mailto:rivera2236@gmail.com?subject=Need information or quote!" variant="contained" color="primary" size="large">
+              <Button className={classes.low} href="mailto:guardiolarenovations19@gmail.com?subject=Need information or quote!" variant="contained" color="primary" size="large">
                 guardiolarenovations@gmail.com
               </Button>
             </center>

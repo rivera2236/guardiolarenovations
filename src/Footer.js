@@ -97,7 +97,7 @@ export default function Footer() {
       
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
-          Footer
+          Guardiola Renovations
         </Typography>
 
                       <Grid container direction="row" justify="center" alignItems="center" spacing={1}>
@@ -115,7 +115,7 @@ export default function Footer() {
                       </Grid>
 
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
+          Check us out on social media!
         </Typography>
         <Copyright />
       </footer>
