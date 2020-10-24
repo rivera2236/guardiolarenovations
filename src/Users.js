@@ -107,7 +107,7 @@ export default function About() {
             <Hidden smUp>
             <center>
               <Button href="tel:7178910588" variant="contained" color="primary" size="large">
-                Phone: 123-456-7890
+                Phone: (717) 891-0588
               </Button>
             </center>
             <br/>
